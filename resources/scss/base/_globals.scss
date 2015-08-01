@@ -1,0 +1,56 @@
+.clear{
+  clear: both;
+}
+.black{
+  color: $black;
+}
+.red{
+  color: $red;
+}
+.raised {
+  background: $white;
+}
+.darkened {
+  background: $dark-grey;
+}
+
+.well {
+  min-height: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: $mid-light-grey;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.mid {
+  left: 0;
+  margin: 6px auto 0;
+  position: absolute;
+  width: 100%;
+}
+.island {
+  outline: 1px solid #ccc;
+  padding: 20px;
+}
+
+.icon-tier{
+  height: 18px;
+  background: transparent none no-repeat 0 100%;
+  width: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  &.icon-tier-first {
+    background-image: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/package-icon-tier1.png);
+  }
+  &.icon-tier-second {
+    background-image: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/package-icon-tier2.png);
+  }
+  &.icon-tier-third {
+    background-image: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/package-icon-tier3.png);
+  }
+}
+
+.separator {
+  border-top: solid 1px $border-grey;
+  padding-top: 22px;
+}

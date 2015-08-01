@@ -1,0 +1,14 @@
+.intro{
+  background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/leader-bg-vps-2.png) repeat 0 0;
+  color: $white;
+  h1,
+  .h1{
+    margin-bottom: 15px;
+  }
+  .gears{
+    margin-top: -40px;
+    @media(max-width: $screen-sm-max){
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.form-group{
+  margin-bottom: 20px;
+}
+
+label{
+  font-weight: $normal;
+}
+
+.radio{
+  margin: 0;
+}
+.radio label{
+  margin-right: 10px;
+  ::nth-child(last){
+    margin-right: 0;
+  }
+}
+
+textarea.form-control, 
+input[type="text"].form-control,
+input[type="url"].form-control,
+input[type="email"].form-control{
+  border-radius: 3px;
+  box-shadow: 0 3px 0 lighten($grey, 17%);
+  color: $black;
+  &:focus{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+}
+select.form-control{
+  color: $grey;
+  border-radius: 3px;
+}
+
+form{
+  position: relative;
+  .btn[type="submit"]{
+    margin-bottom: -20px;
+    position: relative;
+    bottom: -20px;
+    margin: -10px auto;
+    display: block;
+  }
+}

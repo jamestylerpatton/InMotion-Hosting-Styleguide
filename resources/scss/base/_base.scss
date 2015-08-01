@@ -1,0 +1,60 @@
+body{
+  font-size: 13px;
+  font-family: $font;
+}
+
+.wrap{
+  padding: 40px 0;
+}
+.pattern{
+  background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/pattern.gif) repeat 0 0;
+}
+.sunken {
+  background: $mid-light-grey;
+}
+.tabbed{
+  padding-top: 0;
+}
+
+.wrap.pattern + .wrap.sunken,
+.wrap.sunken + .wrap.pattern{
+  border-top: 2px solid lighten($grey, 35%);
+}
+
+.jutwrap {
+  padding: 30px 0 40px;
+}
+.jutwrap2 {
+  padding: 40px 0 30px;
+}
+.jutwrap3 {
+  padding: 30px 0;
+}
+.jutwrap4 {
+  display: block;
+  padding: 0 0 30px;
+}
+.jutwrap5 {
+  padding: 20px 0 0;
+}
+.jutwrap6 {
+  padding: 20px 0;
+}
+.jutwrap7 {
+  padding: 0 0 40px;
+}
+.jutwrap8 {
+  padding: 40px 0 0;
+}
+.jutwrap9 {
+  padding: 0 0 10px;
+}
+.jutwrap10 {
+  padding: 10px 0 0;
+}
+.jutwrap11 {
+  padding: 0 0 60px 0;
+}
+.jutwrap12 {
+  padding: 60px 0 0;
+}

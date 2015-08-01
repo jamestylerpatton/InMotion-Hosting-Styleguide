@@ -1,0 +1,43 @@
+header{
+  padding: 18px 0;
+  .imhlogo img{
+    width: 209px;
+    height: 54px;
+  }
+  .nav.nav-pills-contact{
+    > li > a{
+      margin: 0;
+      padding: 0;
+      color: $black;
+      background: transparent;
+      text-transform: uppercase;
+      border-radius: 0;
+      display: inline;
+      &.chat{
+        margin-right: 10px;
+      }
+      &:hover{
+        color: darken($black, 10%);
+      }
+    }
+    i{
+      display: inline-block;
+      vertical-align: top;
+    }
+    i.icon-chat{
+      background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/icon-chat.gif) no-repeat 0 0;
+      margin-right: 3px;
+      width: 18px;
+      height: 16px;
+    }
+    i.icon-phone{
+      background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/icon-phone.gif) no-repeat -3px -3px;
+      width: 18px;
+      height: 18px;
+    }
+    .sales-label{
+      padding: 2px 0 3px;
+      font-size: 14px;
+    }
+  }
+}

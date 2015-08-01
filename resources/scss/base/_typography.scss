@@ -1,0 +1,37 @@
+.strong{
+  font-weight: $bold;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1, .h1{
+  font-weight: $bold;
+  margin: 0;
+  font-size: 33px;
+}
+h2, .h2{
+  font-weight: $normal;
+  color: $grey;
+  font-size: 24px;
+}
+h3, .h3{
+  font-size: 24px;
+  padding-bottom: 12px;
+  font-weight: $normal;
+}
+h4, .h4{
+  color: $red;
+  font-size: 17px;
+  font-weight: $normal;
+}
+h1, .h1, h2, .h2{
+  font-family: $header-font;
+}
+
+.muted{
+  color: $grey;
+}

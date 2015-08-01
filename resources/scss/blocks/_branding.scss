@@ -1,0 +1,30 @@
+section#branding{
+  @media (min-width: $screen-sm) {
+    .logo>.island{
+      height: 97px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    .logo{
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 450px){
+    .logo{
+      width: 100%;
+      margin-bottom: 30px;
+      &:nth-child(4){
+        margin-bottom: 0;
+      }
+    }
+  }
+}

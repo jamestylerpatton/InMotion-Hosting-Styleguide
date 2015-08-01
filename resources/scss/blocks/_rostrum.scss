@@ -1,0 +1,68 @@
+.rostrum{
+  h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    img{
+      vertical-align: baseline;
+    }
+  }
+  .package-subtitle{
+    border-bottom: 1px solid $border-grey;
+    margin: 0;
+  }
+  .pricebox{
+    color: $red;
+    font-family: $header-font;
+    font-size: 52px;
+    line-height: 1.35;
+    font-weight: $normal;
+    sup{
+      font-size: 28px;
+      margin: -10px 0 0 5px;
+    }
+    sub{
+      font-size: 20px;
+      margin: 0 0 0 -32px;
+    }
+  }
+  strong{
+    color: $blue;
+    font-size: 16px;
+  }
+  .dr-strip{
+    background-color: $yellowish-green;
+    color: $white;
+    height: 46px;
+    margin: 0 -20px -20px;
+    padding-top: 8px;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .rostrum-tiered-item{
+    margin: 0 0 40px;
+    &.rostrum-tiered-item-third{
+      margin: 0 0 20px;
+    }
+    position: relative;
+    text-align: center;
+    &.rostrum-tiered-item-first{
+      z-index: 1;
+      .island{
+        border: 2px solid $dark-blue;
+      }
+    }
+    @media (min-width: $screen-md){
+      width: 33.333%;
+      padding: 0;
+      margin: 0 0 20px;
+      &.rostrum-tiered-item-first{
+        margin-top: -20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+section#colors{
+  .colors{
+    > div{
+      height: 40px;
+      float: left;
+    }
+    &.grey div,
+    &.blue div{
+      width: 16.6666%;
+    }
+    &.yellow div,
+    &.red div,
+    &.green div{
+      width: 33.3333%;
+    }
+    // Define colors
+    .grey1{
+      background: $white;
+    }
+    .grey2{
+      background: $light-grey;
+    }
+    .grey3{
+      background: $mid-light-grey;
+    }
+    .grey4{
+      background: $grey;
+    }
+    .grey5{
+      background: $dark-grey;
+    }
+    .grey6{
+      background: $black;
+    }
+
+    .blue1{
+      background: $light-blue;
+    }
+    .blue2{
+      background: $link-blue;
+    }
+    .blue3{
+      background: $blue;
+    }
+    .blue4{
+      background: $dark-blue;
+    }
+    .blue5{
+      background: $midnight-blue;
+    }
+    .blue6{
+      background: $black-blue;
+    }
+
+    .green1{
+      background: $light-green;
+    }
+    .green2{
+      background: $mid-green;
+    }
+    .green3{
+      background: $green;
+    }
+    .green4{
+      background: $dark-green;
+    }
+
+    .red1{
+      background: $light-red;
+    }
+    .red2{
+      background: $mid-red;
+    }
+    .red3{
+      background: $red;
+    }
+
+    .yellow1{
+      background: $light-yellow;
+    }
+    .yellow2{
+      background: $yellow;
+    }
+    .yellow3{
+      background: $dark-yellow;
+    }
+  }
+}

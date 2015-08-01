@@ -1,0 +1,43 @@
+.navbar-inverse{
+  color: $grey;
+  margin-bottom: 40px;
+  .nav-tabs > li{
+    margin-bottom: 0;
+  }
+  .nav-tabs > li > a{
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    color: $grey;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 30px;
+    &:hover,
+    &:focus,
+    &:active{
+      border: 0;
+      background-color: $red;
+      color: $white;
+    }
+  }
+  .nav li.active > a{
+    background-color: $red;
+    color: $white;
+    font-weight: $bold;
+    border: none;
+    &:after {
+      content: ' ';
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-top-color: $red;
+      border-width: 10px;
+      margin-left: -10px;
+      top: 100%;
+      left: 50%;
+    }
+  }
+}
