@@ -42,3 +42,114 @@ form{
     display: block;
   }
 }
+
+// domain search
+.well-small {
+    border-radius: 3px;
+    padding: 9px 0 11px;
+}
+.domains-pill {
+  background-color: $mid-grey;
+  overflow: hidden;
+  .form-control {
+    background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/icon-magnifying.png) no-repeat 10px 12px #fff;
+    font-size: 20px;
+    padding-left: 40px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 5px;
+    color: darken($grey, 5%);
+  }
+}
+#domain-input-wrap > .input-group{
+  display: block;
+  overflow: hidden;
+  .form-control{
+    border-radius: 3px;
+  }
+}
+
+a#domain-search-button{
+  height: 46px;
+  line-height: 40px;
+  width: 100%;
+  @media (max-width: $screen-sm-max){
+    width: auto;
+    float: right;
+  }
+}
+
+#domain-input-wrap.error .inputtext:focus{
+  border: 1px solid rgba(255,0,0,0.1) !important;
+  box-shadow: 0 0 8px rgba(168,50,54,0.06) !important;
+}
+
+#domain-input-wrap{
+  display: inline-block;
+  position: relative;
+  @media (max-width: $screen-sm-max){
+    display: block;
+  }
+  .res-container{
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    padding: 8px 10px;
+    z-index: 2;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: lighten($dark-grey, 5%);
+    font-weight: 600;
+    border-radius: 3px;
+    height: 38px;
+  }
+  &.success{
+    .res-container{
+      background-color: rgba(98,174,90,0.25);
+      border: 1px solid rgba(0,200,0,0.2);
+      a {
+        font-weight: normal;
+        margin-left: 7px;
+        text-shadow: 0 1px $mid-light-grey;
+      }
+    }
+  }
+  &.error{
+    .res-container{
+      background-color: rgba(168,50,54,0.2);
+      border: 1px solid rgba(255,0,0,0.2);
+    }
+    .inputtext:focus{
+      border: 1px solid rgba(255,0,0,0.1) !important;
+      box-shadow: 0 0 8px rgba(168,50,54,0.06) !important;
+    }
+  }
+  &.success,
+  &.error{
+    .res-container{
+      transition: ease-in 150ms opacity 0s;
+      opacity: 1;
+    }
+  }
+  .loading-gear{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -20px;
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+    opacity: .3;
+    &.lowerleft {
+      margin-top: -3px;
+      right: 25px;
+    }
+  }
+}
+.gearblk {
+  background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/animation/gear-black.svg);
+  background-size: 100%;
+}

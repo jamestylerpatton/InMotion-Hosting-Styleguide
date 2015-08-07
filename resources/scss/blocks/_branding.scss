@@ -1,4 +1,13 @@
 section#branding{
+  .island img{
+    transition: transform 0.3s;
+  }
+  .island:hover{
+    img {
+      -webkit-transform: scale3d(1.05,1.05,1);
+      transform: scale3d(1.05,1.05,1);
+    }
+  }
   @media (min-width: $screen-sm) {
     .logo>.island{
       height: 97px;

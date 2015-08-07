@@ -32,6 +32,7 @@
 @import 'base/globals';
 @import 'base/base';
 @import 'base/typography';
+@import 'base/animation';
 
 @import 'layout/header';
 @import 'layout/navbar';
@@ -46,5 +47,6 @@
 @import 'components/tabs';
 @import 'components/tables';
 @import 'components/compads';
+@import 'components/blockquote';
 
 @import 'pages/styleguide';

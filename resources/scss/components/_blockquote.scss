@@ -1,0 +1,28 @@
+blockquote{
+  margin: 0;
+  padding: 0 20px 20px 36px;
+  font-size: 13px;
+  border: 0;
+  position: relative;
+  &.quoted:before {
+    color: $red;
+    content: "\201C";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 600%;
+    line-height: 1;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+  }
+}
+.indentit {
+    margin-left: 44px;
+}
+.quotename {
+    color: $red;
+    font-family: "adelle";
+    font-size: 16px;
+    font-weight: 600;
+}
