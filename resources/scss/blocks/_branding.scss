@@ -1,39 +1,66 @@
 section#branding{
-  .island img{
-    transition: transform 0.3s;
-  }
-  .island:hover{
-    img {
+  .island{
+    img{
+      transition: transform 0.3s;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+    }
+    &:hover img {
       -webkit-transform: scale3d(1.05,1.05,1);
       transform: scale3d(1.05,1.05,1);
     }
   }
-  @media (min-width: $screen-sm) {
-    .logo>.island{
-      height: 97px;
-      position: relative;
-      img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+  .first_row{
+    margin-bottom: 20px;
+    > div.logo:first-child img{
+      @media (min-width: $screen-lg){
+        height: 125px;
+        width: 320px;
+      }
+      @media (min-width: $screen-md) and (max-width: $screen-md-max){
+        height: 92px;
+        width: 253px;
       }
     }
   }
+  .last_row{
+    .logo img{
+      @media (min-width: $screen-lg){
+        height: 57px;
+        width: 222.5px;
+      }
+      @media (min-width: $screen-md) and (max-width: $screen-md-max){
+        height: 45px;
+        width: 172.5px;
+      }
+    }
+    @media (max-width: $screen-xs-max){
+      .logo:nth-child(odd){
+        clear: left;
+      }
+    }
+  }
+
   @media (max-width: $screen-sm-max) {
+    .first_row{
+      margin-bottom: 0;
+    }
     .logo{
       margin-bottom: 20px;
     }
   }
   @media (max-width: 450px){
-    .logo{
-      width: 100%;
-      margin-bottom: 30px;
-      &:nth-child(4){
-        margin-bottom: 0;
-      }
+    .logo:last-child{
+      margin-bottom: 0;
     }
+    .last_row .logo{
+      width: 100%;
+    }
+  }
+
+  .site-icons img{
+    display: inline-block;
+    margin: 10px;
   }
 }

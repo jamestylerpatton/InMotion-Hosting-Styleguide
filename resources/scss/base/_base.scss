@@ -9,8 +9,15 @@ body{
 .pattern{
   background: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/pattern.gif) repeat 0 0;
 }
-.sunken {
+.sunken{
   background: $mid-light-grey;
+}
+.maing{
+  background: $light-grey;
+  &.bordered{
+    border-top: 2px solid $light-border-grey;
+    border-bottom: 2px solid $light-border-grey;
+  }
 }
 .tabbed{
   padding-top: 0;
