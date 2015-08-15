@@ -7,7 +7,8 @@ module.exports = (function() {
         'Color' : 'white',
         'Font' : 'Adelle',
         'Font Size' : '33px',
-        'Margin Bottom' : '15px'
+        'Margin Bottom' : '15px',
+        'Font Weight' : 'Bold (600)'
       }
     },
     h1_item_2 : {
@@ -16,7 +17,7 @@ module.exports = (function() {
         'Color' : 'black',
         'Font' : 'Adelle',
         'Font Size' : '33px',
-        'Margin Bottom' : '15px'
+        'Font Weight' : 'Bold (600)'
       }
     },
     header_p_item: {
