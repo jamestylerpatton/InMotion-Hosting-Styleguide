@@ -1,7 +1,9 @@
 var $ = jQuery = require('jQuery'),
-    drags = require('../../web/js/drags.js'),
+    drags = require('./drags.js'),
+    items = require('./item-data.js'),
     bootstrap = require('../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'),
-    detectElements = require('../../web/js/detect-elements.js');
+    // detectElements = require('./detect-elements.js'),
+    clickableItems = require('./clickable-items.js');
 
 (function($) {
 
@@ -17,6 +19,7 @@ var $ = jQuery = require('jQuery'),
     });
 
     var init = (function(){
+
         // Turn anchor links into smoothscroll
         $(function(){
             $('#navbar a').click(function(event){
@@ -37,6 +40,8 @@ var $ = jQuery = require('jQuery'),
                 }
             });
         });
+
+        clickableItems($);
 
         // Compads
         $('.comp_adv_trigger').tooltip();

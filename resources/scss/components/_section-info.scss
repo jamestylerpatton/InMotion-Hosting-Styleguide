@@ -1,0 +1,38 @@
+.show-sec-info{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 140px;
+  left: 100px;
+  width: 300px;
+  background: $dark-grey;
+  color: $white;
+  box-shadow: 5px 0px 0px rgba(0,0,0,0.5);
+  padding: 40px 20px 20px;
+  .handle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: darken($dark-grey, 3%);
+  }
+  .close{
+    padding: 8px 10px;
+    color: $white;
+    opacity: 0.7;
+    font-size: 18px;
+  }
+  h2{
+    margin-top: 20px;
+    color: $white;
+  }
+  h3{
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+*[data-sg]{
+  cursor: pointer;
+}

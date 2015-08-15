@@ -14,7 +14,7 @@ gulp.task('styles', function(){
 gulp.task('scripts', function(){
   gulp.src(['resources/js/script.js'])
       .pipe(browserify())
-      .pipe(minify())
+      //.pipe(minify())
       .pipe(gulp.dest('web/js/'))
       .pipe(notify('Scripts have been compiled'));
 });
