@@ -2,7 +2,6 @@ var $ = jQuery = require('jQuery'),
     drags = require('./drags.js'),
     items = require('./item-data.js'),
     bootstrap = require('../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'),
-    // detectElements = require('./detect-elements.js'),
     clickableItems = require('./clickable-items.js');
 
 (function($) {
