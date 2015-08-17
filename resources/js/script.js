@@ -6,7 +6,7 @@ var $ = jQuery = require('jQuery'),
 
 (function($) {
 
-    var loadSections = (function(callback){
+    $(function(){
         $( "#branding" ).load( "views/branding.html");
         $( "#colors" ).load( "views/colors.html");
         $( "#typography" ).load( "views/typography.html");
@@ -14,7 +14,7 @@ var $ = jQuery = require('jQuery'),
         $( "#forms" ).load( "views/forms.html");
         $( "#rostrum" ).load( "views/rostrum.html");
         $( "#tables" ).load( "views/tables.html");
-        $( "#compads" ).load( "views/compads.html");
+        $( "#compads" ).load( "views/compads.html", init);
     });
 
     var init = (function(){
@@ -93,10 +93,6 @@ var $ = jQuery = require('jQuery'),
                 return false;
             });
         });
-    });
-
-    loadSections(function(){
-        init();
     });
 
 })(jQuery);

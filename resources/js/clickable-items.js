@@ -30,7 +30,6 @@ module.exports = function($){
     addInfo : function(clickedElem){
       this.$elemHeader.text(this.items[clickedElem].name);
       for (var key in this.items[clickedElem].props){
-        console.log(key + " = " + this.items[clickedElem].props[key]);
         this.$elemShow.append('<h3>'+key+' :</h3>');
         this.$elemShow.append('<p>'+this.items[clickedElem].props[key]+'</p>');
       }
@@ -41,7 +40,6 @@ module.exports = function($){
     init : function(){
       this.cacheDom();
       this.bindEvents();
-      console.log('init');
     }
   }
   clickableItems.init();
