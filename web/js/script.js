@@ -33,7 +33,11 @@ module.exports = function($){
     showInfo : function(event){
       var clickedElem = $(event.target).attr('data-name');
       this.deleteInfo();
-      this.addInfo(clickedElem);
+      if (this.items[clickedElem] !== undefined){
+        this.addInfo(clickedElem);
+      } else{
+        this.backupInfo();
+      }
 
       this.$secInput.fadeIn(250);
     },
@@ -48,6 +52,10 @@ module.exports = function($){
         this.$elemShow.append('<h3>'+key+' :</h3>');
         this.$elemShow.append('<p>'+this.items[clickedElem].props[key]+'</p>');
       }
+    },
+    backupInfo : function(){
+      this.$elemHeader.text('Undefined Item');
+      this.$elemShow.append('<p>This item has not been added to the item-data file.</p>');
     },
     deleteInfo : function(){
       this.$elemShow.html('');
@@ -207,6 +215,7 @@ module.exports = (function() {
     h1_item : {
       name : 'H1 Page Header',
       props : {
+        'Tag' : 'h1',
         'Color' : 'white',
         'Font' : 'Adelle',
         'Font Size' : '33px',
@@ -217,6 +226,7 @@ module.exports = (function() {
     h1_item_2 : {
       name : 'H1 Page Header',
       props : {
+        'Tag' : 'h1',
         'Color' : 'black',
         'Font' : 'Adelle',
         'Font Size' : '33px',
@@ -226,6 +236,7 @@ module.exports = (function() {
     header_p_item: {
       name : 'Header Paragraph',
       props : {
+        'Tag' : 'p',
         'Font' : 'Adelle Sans',
         'Font Size' : '13px'
       }
@@ -233,6 +244,7 @@ module.exports = (function() {
     h2_item_1: {
       name : 'Section Header H2',
       props : {
+        'Tag/Classes' : 'h2.black',
         'color' : 'black',
         'Font' : 'Adelle',
         'Font Size' : '24px',
@@ -251,6 +263,7 @@ module.exports = (function() {
     h3_item: {
       name : 'H3 Header',
       props : {
+        'Tag' : 'h3',
         'color' : 'black',
         'Font' : 'Adelle Sans',
         'Font Size' : '24px',
@@ -260,6 +273,7 @@ module.exports = (function() {
     h4_item: {
       name : 'Section Header H2',
       props : {
+        'Tag' : 'h4',
         'color' : 'red',
         'Font' : 'Adelle Sans',
         'Font Size' : '17px',
@@ -269,14 +283,16 @@ module.exports = (function() {
     p_item: {
       name : 'Paragraph',
       props : {
+        'Tag' : 'p',
         'Font' : 'Adelle Sans',
         'Font Size' : '13px',
         'Font Weight' : 'normal (400)'
       }
     },
     strong_item: {
-      name : 'Strong',
+      name : 'Bold',
       props : {
+        'Tag' : 'strong',
         'Font' : 'Adelle Sans',
         'Font Weight' : 'black (900)'
       }
@@ -284,13 +300,15 @@ module.exports = (function() {
     link_item: {
       name : 'Link',
       props : {
+        'Tag' : 'a',
         'Font' : 'Adelle Sans',
         'Color' : 'Link Blue'
       }
     },
     em_item: {
-      name : 'Emphasized',
+      name : 'Emphasized/Italicized',
       props : {
+        'Tag' : 'em',
         'Font' : 'Adelle Sans',
         'Font Style' : 'Italics'
       }
@@ -298,8 +316,106 @@ module.exports = (function() {
     muted_item: {
       name : 'Muted',
       props : {
+        'Class' : '.muted',
         'Font' : 'Adelle Sans',
         'Color' : 'Grey'
+      }
+    },
+    //buttons
+    button_primary_1: {
+      name : 'Primary Button',
+      props : {
+        'Class' : '.btn.btn-primary',
+        'Background' : 'Link Blue',
+        'Color' : 'White'
+      }
+    },
+    button_primary_2: {
+      name : 'Primary Button Large',
+      props : {
+        'Class' : '.btn.btn-primary.btn-large',
+        'Background' : 'Link Blue',
+        'Color' : 'White'
+      }
+    },
+    button_primary_3: {
+      name : 'Primary Button Mini',
+      props : {
+        'Class' : '.btn.btn-primary.btn-mini',
+        'Background' : 'Link Blue',
+        'Color' : 'White'
+      }
+    },
+    button_white_1: {
+      name : 'White Button',
+      props : {
+        'Class' : '.btn.btn-white',
+        'Background' : 'White',
+        'Color' : 'Midnight Blue'
+      }
+    },
+    button_white_2: {
+      name : 'White Button Large',
+      props : {
+        'Class' : '.btn.btn-white.btn-large',
+        'Background' : 'White',
+        'Color' : 'Midnight Blue'
+      }
+    },
+    button_white_3: {
+      name : 'White Button Mini',
+      props : {
+        'Class' : '.btn.btn-white.btn-mini',
+        'Background' : 'White',
+        'Color' : 'Midnight Blue'
+      }
+    },
+    button_white_4: {
+      name : 'White Button 2',
+      props : {
+        'Class' : '.btn.btn-white-blue',
+        'Background' : 'White',
+        'Color' : 'Link Blue'
+      }
+    },
+    button_white_5: {
+      name : 'White Button 2 Large',
+      props : {
+        'Class' : '.btn.btn-white-blue.btn-large',
+        'Background' : 'White',
+        'Color' : 'Link Blue'
+      }
+    },
+    button_white_6: {
+      name : 'White Button 2 Mini',
+      props : {
+        'Class' : '.btn.btn-white-blue.btn-mini',
+        'Background' : 'White',
+        'Color' : 'Link Blue'
+      }
+    },
+    button_red_1: {
+      name : 'Red Button',
+      props : {
+        'Class' : '.btn.btn-red',
+        'Background' : 'Red',
+        'Color' : 'White'
+      }
+    },
+    button_red_2: {
+      name : 'Red Button Large',
+      props : {
+        'Class' : '.btn.btn-red.btn-large',
+        'Background' : 'Red',
+        'Color' : 'White'
+      }
+    },
+    button_red_3: {
+      name : 'Red Button Mini',
+      props : {
+        'Class' : '.btn.btn-red.btn-mini',
+        'Background' : 'Red',
+        'Color' : 'White'
       }
     },
     // colors
