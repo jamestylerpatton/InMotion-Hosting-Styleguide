@@ -18,7 +18,11 @@ module.exports = function($){
     showInfo : function(event){
       var clickedElem = $(event.target).attr('data-name');
       this.deleteInfo();
-      this.addInfo(clickedElem);
+      if (this.items[clickedElem] !== undefined){
+        this.addInfo(clickedElem);
+      } else{
+        this.backupInfo();
+      }
 
       this.$secInput.fadeIn(250);
     },
@@ -33,6 +37,10 @@ module.exports = function($){
         this.$elemShow.append('<h3>'+key+' :</h3>');
         this.$elemShow.append('<p>'+this.items[clickedElem].props[key]+'</p>');
       }
+    },
+    backupInfo : function(){
+      this.$elemHeader.text('Undefined Item');
+      this.$elemShow.append('<p>This item has not been added to the item-data file.</p>');
     },
     deleteInfo : function(){
       this.$elemShow.html('');
