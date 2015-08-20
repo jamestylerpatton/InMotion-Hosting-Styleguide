@@ -5,6 +5,7 @@
   <title>Styleguide | InMotion Hosting</title>
   <script src="//use.typekit.net/uwn1fxo.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="resources/css/prism.css">
   <link rel="stylesheet" href="web/css/style.css">
 </head>
 <body>
@@ -55,9 +56,61 @@
       </div>
     </div>
   </div>
+  <a data-show="code-intro">code</a>
 </div>
 
+<section id="code-intro" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Common Banner HTML (Bootstrap 2.3.2)</h3>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="intro wrap domains">
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="span9">
+                &lt;h1>Page Header&lt;/h1>
+                &lt;p>This will be your abnormally long paragraph giving a synopsis of what your product is or what this page is about.&lt;/p>
+            &lt;/div>
+            &lt;div class="span3 gears">
+                &lt;img class="banner-img" src="/img/gears.png" alt="gears">
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="branding" class="wrap sunken">
+</section>
+<section id="code-branding" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Common Section HTML (Bootstrap 2.3.2)</h3>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="wrap">{# .pattern and .sunken are classes used to change backgrounds #}
+    &lt;div class="container">
+        &lt;div class="row jutwrap4">
+            &lt;div class="span12">
+                {# &lt;h3 class="text-center black"> for black text #}
+                &lt;h3 class="text-center">Section Header&lt;/h3>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;div class="span12">
+                Any Content
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="colors" class="wrap white">
@@ -65,11 +118,107 @@
 
 <section id="typography" class="wrap pattern">
 </section>
+<section id="code-typography" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Blockquote</h3>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="island sunken">
+    &lt;blockquote class="quoted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi ipsam, itaque enim doloribus ipsa ad, cupiditate consequatur quae eaque perspiciatis est iste quidem fuga inventore, veritatis, vero amet rerum. "&lt;/blockquote>
+    &lt;span class="emisor vibrant indentit">
+        &lt;span class="quotename">Joe Dirt&lt;/span>
+    &lt;/span>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="buttons" class="wrap sunken">
 </section>
 
 <section id="forms" class="wrap white">
+</section>
+<section id="code-forms" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Basic Form Code (Bootstrap 2.3.2)</h3>
+      <p><em>Forms on IMH are not usually made in raw HTML.</em></p>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="well well-deep">
+    &lt;form action="#" method="post" class="form-vertical formname">
+        &lt;div class="row-fluid">
+            &lt;div class="span12">
+                &lt;div id="formname">
+                    &lt;div class="control-group">
+                        &lt;label class="control-label required" for="form_fullname">Full Name&lt;/label>
+                        &lt;div class="controls">
+                            &lt;input type="text" id="form_fullname" name="form[fullname]" required="required" class="span12" placeholder="Full Name*">
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="control-group">
+                        &lt;label class="control-label required" for="form_url">Website URL&lt;/label>
+                        &lt;div class="controls">
+                            &lt;input type="text" id="form_url" name="form[url]" required="required" class="span12" placeholder="Your Website URL*">
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="control-group">
+                        &lt;label class="control-label" for="form_overall_satisfaction">
+                            What is your overall satisfaction with our web hosting service?
+                        &lt;/label>
+                        &lt;div class="controls">
+                            &lt;select id="form_overall_satisfaction" name="form[overall_satisfaction]" class="span12">
+                                &lt;option value="">&lt;/option>
+                                &lt;option value="Yes">Yes - Very Satisfied&lt;/option>
+                                &lt;option value="No">No - Very Dissatisfied&lt;/option>
+                            &lt;/select>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="control-group">
+                        &lt;label class="control-label" for="form_additional_comments">
+                            Additional Comments:
+                        &lt;/label>
+                        &lt;div class="controls">
+                            &lt;textarea id="form_additional_comments" name="form[additional_comments]" class="span12">&lt;/textarea>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;small>Required fields are marked with an asterisk (*)&lt;/small>
+        &lt;div class="row-fluid">
+            &lt;div class="form-actions span7 offset5">
+                &lt;button type="submit" class="btn btn-primary form-submit">Send&lt;/button>
+            &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Domain Form Code (Bootstrap 2.3.2)</h3>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="span8 domainwell">
+    &lt;form class="well-small domains-pill">
+        &lt;div id="domain-input-wrap">
+            &lt;input  class="inputtext" type="text" placeholder="enter a domain" />
+            &lt;div class="res-container">&lt;/div>
+            &lt;div class="loading-gear gearblk foot-gear1 turn">&lt;/div>
+            &lt;div class="loading-gear lowerleft gearblk foot-gear1 turn2">&lt;/div>
+        &lt;/div>
+        &lt;span class="lift2">
+        &lt;a id="domain-search-button" href="#" class="btn btn-primary tall">Search&lt;/a>&lt;/span>
+    &lt;/form>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="rostrum" class="wrap pattern">
@@ -77,8 +226,115 @@
 
 <section id="tables" class="wrap sunken tabbed">
 </section>
+<section id="code-tables" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Tabbed Content</h3>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="tabbg">
+    &lt;div class="navbar-inverse nav-static-top hosting-plan-details">
+        &lt;div class="navbar-inner">
+            &lt;div class="container"> 
+                &lt;ul class="nav nav-tabs">
+                    &lt;li class="active">
+                        &lt;a href="#specifications" data-toggle="tab" id="styleguide#specifications-1">Specifications&lt;div class="arrow">&lt;/div>&lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                        &lt;a href="#compare" data-toggle="tab" id="styleguide#compare-1">Compare Us&lt;/a>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="container">
+        &lt;div class="tab-content">
+            &lt;div class="tab-pane active specification" id="specifications">
+                {% include 'specifications-table.html.twig' %}
+            &lt;/div>
+            &lt;div class="tab-pane compare" id="compare">
+                {% include 'compare-table.html.twig' %}
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="compads" class="wrap pattern">
+</section>
+<section id="code-compads" class="hide-show wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+      <h3>Competetive Advantages Example (Bootstrap 2.3.2)</h3>
+      <p><em>Example taken from vps-hosting page</em></p>
+<pre><code class="language-twig">{# HTML code should always be indented 4 spaces on IMH #}
+&lt;div class="row">
+    &lt;div class="span12">
+        &lt;ul class="competitive_advantages hidden-phone">
+            &lt;li class="comp_adv_trigger" data-toggle="tooltip" data-title="Once you purchase your account, give us an hour and we will have your VPS partition up and ready to run. No setup required by you!">
+                &lt;img src="/img/icon-free-setup.png" alt="Free Setup">
+                &lt;h4>FREE Setup&lt;/h4>
+                &lt;p>Ready to Use Out of the Box&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger" data-toggle="tooltip" data-title="We perform automatic backups of your data every 24-36 hours. This ensures you always have a copy in case a client deletes something important.">
+                &lt;img src="/img/business/icon-data-backups.png" alt="">
+                &lt;h4>Free Backups&lt;/h4>
+                &lt;p>Others Charge, We Don't!&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger" data-toggle="tooltip" data-title="If you purchase a multiple-month plan and are not completely satisfied with our VPS Hosting, we will give you a full refund. No questions asked.">
+                &lt;img src="/img/business/icon-guarantee.png" alt="money back guarantee">
+                &lt;h4>90-Day Money Back&lt;/h4>
+                &lt;p>Satisfaction Guaranteed&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger" data-toggle="tooltip" data-title="We include server management for things such as LAMP stack updates, cPanel and WHM updates and OS patches with all VPS Hosting plans. Additional management is also purchasable by the hour with our Managed Hosting team.">
+                &lt;img src="/img/business/icon-people.png" alt="managed hosting">
+                &lt;h4>Managed Hosting&lt;/h4>
+                &lt;p>Advanced Server Optimization&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger last" data-toggle="tooltip" data-title="We utilize multiple data centers, premium bandwidth providers, and advanced routing technology to ensure our network is faster than the competition – this means faster web sites, downloads, and email. Select from either our West or East coast data center locations.">
+                &lt;img src="/img/business/icon-max-speed-zone.png" alt="super fast network">
+                &lt;h4>Max Speed Zone&lt;sup>™&lt;/sup>&lt;/h4>
+                &lt;p>Choose Your Data Center&lt;/p>
+            &lt;/li>
+        &lt;/ul>
+        &lt;ul class="competitive_advantages visible-phone">
+            &lt;li class="comp_adv_trigger">
+                &lt;img src="/img/icon-free-setup.png" alt="Free Setup">
+                &lt;h4>FREE Setup&lt;/h4>
+                &lt;p>Ready to Use Out of the Box&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger">
+                &lt;img src="/img/business/icon-data-backups.png" alt="Free Backups">
+                &lt;h4>Free Backups&lt;/h4>
+                &lt;p>Others Charge, We Don't!&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger">
+                &lt;img src="/img/business/icon-guarantee.png" alt="money back guarantee">
+                &lt;h4>90-Day Money Back&lt;/h4>
+                &lt;p>Satisfaction Guaranteed&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger">
+                &lt;img src="/img/business/icon-people.png" alt="managed hosting">
+                &lt;h4>Managed Hosting&lt;/h4>
+                &lt;p>Advanced Server Optimization&lt;/p>
+            &lt;/li>
+            &lt;li class="comp_adv_trigger last">
+                &lt;img src="/img/business/icon-max-speed-zone.png" alt="super fast network">
+                &lt;h4>Max Speed Zone&lt;sup>™&lt;/sup>&lt;/h4>
+                &lt;p>Choose Your Data Center&lt;/p>
+            &lt;/li>
+        &lt;/ul>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div class="show-sec-info">

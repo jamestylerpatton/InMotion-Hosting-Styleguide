@@ -8495,6 +8495,24 @@ blockquote.quoted:before {
   cursor: pointer;
 }
 
+div.intro,
+section {
+  position: relative;
+}
+
 section#buttons .row > div > div {
   margin-bottom: 10px;
+}
+
+.hide-show {
+  display: none;
+  box-shadow: inset 0px 0px 5px #9A9A9A;
+}
+
+.intro > a,
+section > a {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
 }

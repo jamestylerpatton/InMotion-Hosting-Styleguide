@@ -3,6 +3,8 @@ var $ = jQuery = require('jQuery'),
     items = require('./item-data.js'),
     bootstrap = require('../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'),
     clickableItems = require('./clickable-items.js');
+    // http://prismjs.com/
+    require('./prism.js');
 
 (function($) {
 
@@ -92,6 +94,11 @@ var $ = jQuery = require('jQuery'),
                 }
                 return false;
             });
+        });
+
+        $('a[data-show]').click(function(event){
+            var section = $(event.target).attr('data-show');
+            $('#'+section).slideToggle();
         });
     });
 
