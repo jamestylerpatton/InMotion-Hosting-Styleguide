@@ -7814,6 +7814,13 @@ section#branding .site-icons img {
   display: inline-block;
   margin: 10px;
 }
+section#branding .product-icons > div {
+  padding: 10px;
+}
+section#branding .product-icons > div img {
+  max-width: 100%;
+  max-height: 150px;
+}
 
 section#colors .colors {
   height: 40px;
@@ -8253,6 +8260,10 @@ a#domain-search-button {
   background-image: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/unacceptable.png);
 }
 
+.table-responsive.specifications {
+  padding-left: 20px;
+}
+
 table.table {
   /* specification table */
   /* end spec table */
@@ -8263,7 +8274,7 @@ table.table img {
   vertical-align: baseline;
 }
 table.table .accents {
-  margin: 0 8px 0 -8px;
+  margin: 0 8px 0 -25px;
 }
 table.table tbody > tr > th,
 table.table tbody > tr > td, table.table thead > tr > th,
@@ -8454,7 +8465,7 @@ blockquote.quoted:before {
   position: fixed;
   z-index: 9999;
   top: 140px;
-  left: 100px;
+  left: 25px;
   width: 300px;
   background: #333333;
   color: #FFFFFF;

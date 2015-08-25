@@ -15,12 +15,16 @@
   background-image: url(http://imh01-inmotionhosting1.netdna-ssl.com/img/unacceptable.png);
 }
 
+.table-responsive.specifications{
+  padding-left: 20px;
+}
+
 table.table{
   img{
     vertical-align: baseline;
   }
   .accents{
-    margin: 0 8px 0 -8px;
+    margin: 0 8px 0 -25px;
   }
 
   $border : 1px solid $border-grey;
