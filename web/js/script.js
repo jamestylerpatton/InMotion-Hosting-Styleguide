@@ -425,6 +425,28 @@ module.exports = (function() {
         'Color' : 'White'
       }
     },
+    //icons
+    business_icon: {
+      name : 'Business Icon'
+    },
+    vps_icon: {
+      name : 'VPS Icon'
+    },
+    reseller_icon: {
+      name : 'Reseller Icon'
+    },
+    dedicated_icon: {
+      name : 'Dedicated Icon'
+    },
+    enterprise_icon: {
+      name : 'Enterprise Icon'
+    },
+    legacy_icon: {
+      name : 'Legacy Icon',
+      props : {
+        'Note' : 'This icon has not been used on live site yet, and is subject to change'
+      }
+    },
     // colors
     grey_1: {
       name : 'White',
