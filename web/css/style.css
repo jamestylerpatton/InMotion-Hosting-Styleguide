@@ -8350,9 +8350,6 @@ table.table.specifications thead .besttab .tabtop {
   color: #FFFFFF;
   background: #8EB73E;
 }
-table.table.specifications tbody tr th {
-  border-left: 0;
-}
 table.table.specifications tbody .btn-link {
   color: #232323;
 }
@@ -8360,9 +8357,6 @@ table.table.specifications tbody .btn-link:hover, table.table.specifications tbo
   color: #418FBF;
   text-decoration: none;
   outline: none;
-}
-table.table.specifications tfoot tr th {
-  border-left: 0;
 }
 table.table.specifications tfoot p.price-strike {
   margin-bottom: 0;

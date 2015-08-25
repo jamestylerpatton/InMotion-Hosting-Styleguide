@@ -120,9 +120,6 @@ table.table{
       }
     }
     tbody{
-      tr th{
-        border-left: 0;
-      }
       .btn-link{
         color: $black;
         &:hover,
@@ -135,9 +132,6 @@ table.table{
       }
     }
     tfoot{
-      tr th{
-        border-left: 0;
-      }
       p.price-strike{
         margin-bottom: 0;
       }
