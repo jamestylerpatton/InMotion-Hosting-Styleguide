@@ -427,23 +427,39 @@ module.exports = (function() {
     },
     //icons
     business_icon: {
-      name : 'Business Icon'
+      name : 'Business Icon',
+      props : {
+        'Download' : '<a href="web/img/products/icon-business-hosting.png" target="_blank">icon-business-hosting.png</a>'
+      }
     },
     vps_icon: {
-      name : 'VPS Icon'
+      name : 'VPS Icon',
+      props : {
+        'Download' : '<a href="web/img/products/icon-vps-hosting.png" target="_blank">icon-vps-hosting.png</a>'
+      }
     },
     reseller_icon: {
-      name : 'Reseller Icon'
+      name : 'Reseller Icon',
+      props : {
+        'Download' : '<a href="web/img/products/icon-reseller-hosting.png" target="_blank">icon-reseller-hosting.png</a>'
+      }
     },
     dedicated_icon: {
-      name : 'Dedicated Icon'
+      name : 'Dedicated Icon',
+      props : {
+        'Download' : '<a href="web/img/products/icon-dedicated-servers.png" target="_blank">icon-dedicated-servers.png</a>'
+      }
     },
     enterprise_icon: {
-      name : 'Enterprise Icon'
+      name : 'Enterprise Icon',
+      props : {
+        'Download' : '<a href="web/img/products/icon-enterprise-servers.png" target="_blank">icon-enterprise-servers.png</a>'
+      }
     },
     legacy_icon: {
       name : 'Legacy Icon',
       props : {
+        'Download' : '<a href="web/img/products/icon-legacy-servers.png" target="_blank">icon-legacy-servers.png</a>',
         'Note' : 'This icon has not been used on live site yet, and is subject to change'
       }
     },
